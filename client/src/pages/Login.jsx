@@ -2,6 +2,7 @@ import React, {useState}from 'react'
 import axios from 'axios'
 import {toast} from 'react-hot-toast'
 import {useNavigate} from 'react-router-dom'
+import '../styles/login.css'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -30,7 +31,8 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className='login-container'>
+      <h1>LOGIN</h1>
       <form onSubmit={loginUser}>
       <label>Email</label>
         <input type='email' placeholder='enter email...' value={data.email} onChange={(e) => setData({...data, email: e.target.value})}></input>

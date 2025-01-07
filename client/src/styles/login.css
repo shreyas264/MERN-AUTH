@@ -1,0 +1,49 @@
+.login-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 48px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    border-radius: 10px;
+    margin: 5px;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+}
+
+.login-container > h1{
+    margin-bottom: 20px;
+}
+
+.login-container > form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-container input{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.login-container input::placeholder{
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+.login-container button{
+    font-family: "Poppins", serif;
+    background-color: hsl(133, 68%, 46%);
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
